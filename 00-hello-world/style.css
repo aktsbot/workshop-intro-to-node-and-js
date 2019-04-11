@@ -1,0 +1,14 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #232323;
+  color: #f0f0f0;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.enlighten {
+  color: yellow;
+}
