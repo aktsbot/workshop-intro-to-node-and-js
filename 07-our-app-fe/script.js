@@ -1,6 +1,6 @@
 const apiServer = "http://localhost:3000";
 
-getAllCats = function() {
+const getAllCats = function() {
   const url = `${apiServer}/cats`;
   fetch(url)
     .then(response => response.json())
@@ -11,7 +11,30 @@ getAllCats = function() {
     });
 };
 
+const addCat = function() {
+  const name = document.getElementById("cat-add-name").value;
+  const fav = document.getElementById("cat-add-fav").value;
+
+  const payload = { name: name, fav: fav };
+  const url = `${apiServer}/cats`;
+  fetch(url, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+  })
+    .then(response => response.json())
+    .then(json => {});
+};
+
 const getAllBtn = document.getElementById("get-cats");
 getAllBtn.addEventListener("click", () => {
   getAllCats();
+});
+
+const addBtn = document.getElementById("add-cat");
+addBtn.addEventListener("click", () => {
+  addCat();
 });
