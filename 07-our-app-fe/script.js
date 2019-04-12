@@ -5,7 +5,9 @@ getAllCats = function() {
   fetch(url)
     .then(response => response.json())
     .then(json => {
-      console.log(json);
+      const list = json.map(c => `<li>${c.name} - ${c.fav}</li>`);
+      const html = `<ul>${list}</ul>`;
+      document.getElementById("cats-list").innerHTML = html;
     });
 };
 
