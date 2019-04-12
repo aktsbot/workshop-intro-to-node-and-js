@@ -1,0 +1,13 @@
+#cats-list {
+  padding: 20px;
+  font-family: monospace;
+  border: 1px solid #222;
+  margin: 3px;
+  height: 300px;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+}
