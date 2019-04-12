@@ -1,0 +1,12 @@
+{
+  "cats": [
+    { "id": 10, "name": "Oscar", "fav": "Purr" },
+    { "id": 11, "name": "Jake", "fav": "Milk" },
+    { "id": 12, "name": "Samantha", "fav": "Cheese" }
+  ],
+  "dogs": [
+    { "id": 20, "name": "Buddy", "fav": "Bones" },
+    { "id": 21, "name": "Snow", "fav": "Biscuits" },
+    { "id": 22, "name": "Wally", "fav": "Biscuit Bones" }
+  ]
+}
